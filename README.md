@@ -1,4 +1,4 @@
-
+![GitHub last commit](https://img.shields.io/github/last-commit/dylanzenner/greenhouse_gas_emissions_de_pipeline)
 ![GitHub repo size](https://img.shields.io/github/repo-size/dylanzenner/greenhouse_gas_emissions_de_pipeline)
 # SF-Greenhouse Gas Emissions DE Pipeline
 
