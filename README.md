@@ -1,3 +1,5 @@
+
+![GitHub repo size](https://img.shields.io/github/repo-size/dylanzenner/greenhouse_gas_emissions_de_pipeline)
 # SF-Greenhouse Gas Emissions DE Pipeline
 
 Tracking greenhouse gas emissions in San Francisco across department, source type, consumption units, and fiscal year. Completly hosted in the AWS ecosystem in cluding a dashboard built with Amazon Quicksight.
