@@ -9,4 +9,49 @@ Tracking greenhouse gas emissions in San Francisco across department, source typ
 ## Architecture
 ![](architecture/greenhouse_gas_emissions_architecture_diagram.png)
 
-Data is sourced from San Francisco's Open Data API (https://dev.socrata.com/foundry/data.sfgov.org/pxac-sadh) as JSON documents containing information on greenhouse gas emissions throughout San Francisco. A series of Lambda functions integrated with SQS orchestrate the data movement throughout the pipeline. The presentation layer is created using Amazon QuickSight.
+Data is sourced from San Francisco's Open Data API (https://dev.socrata.com/foundry/data.sfgov.org/pxac-sadh) as JSON documents containing information on greenhouse gas emissions throughout San Francisco. A series of Lambda functions integrated with SQS orchestrate the data movement and transformation throughout the pipeline. The presentation layer is created using Amazon QuickSight.
+
+## Infrastructure
+The project is housed in the AWS ecosystem and utilizes the following resources:
+
+**VPC:**
+-   Custom built VPC with two subnets (1 private, 1 public)
+-   IGW, NATGW and Route Tables
+-   Security Groups
+
+**DynamoDB:**
+
+-   On-Demand Capacity
+- Partition key on the uuid field
+
+**2 Lambda Functions:**
+-   1 for pulling data from the API and sending it in batches to an SQS Queue
+-   1 for transforming the data from the SQS Queue and sending it to DynamoDB
+
+**Secrets Manager:**
+-   For storing connection variables and API tokens
+
+**S3 Bucket with versioning enabled:**
+-   For storing the transformed data in JSON format
+
+**SQS with a deadletter queue:**
+-   For receiving data in batches from the API
+-   Deadletter queue for automatic retry of failed messages
+
+**SNS**
+-   For sending failure messages to a Slack Channel
+
+**CloudWatch Time-Based Events:**
+-   For invoking the first lambda function and triggering the pipeline
+
+**Amazon Quicksight:**
+-   For the visualization layer
+
+## Dashboard
+![]()
+![]()
+![]()
+![]()
+![]()
+
+## Points moving forward
