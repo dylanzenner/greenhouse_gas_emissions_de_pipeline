@@ -4,7 +4,7 @@
 
 Tracking greenhouse gas emissions in San Francisco across department, source type, consumption units, and fiscal year. Completly hosted in the AWS ecosystem in cluding a dashboard built with Amazon Quicksight.
 
-**If you would like to replicate this project deploy the CloudFormation template in the cfn directory.**
+**If you would like to replicate this project deploy the CloudFormation templates in the cfn directory.**
 
 ## Architecture
 ![](architecture/greenhouse_gas_emissions_architecture_diagram.png)
