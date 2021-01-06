@@ -61,16 +61,16 @@ Just like my previous project I had a ton of fun working on this project. I rece
 
 -   The biggest change from my last project to this one is the utilization of CloudFormation. This was probably the most suggested implementation from the previous project. I have to say, it was definitly a great idea, being able to spin up and spin down the entire infrastructure in a matter of minutes was amazing and saved me a ton of cost. When I was done working on the project for the day I could spin down the infrastructure and not have to worry about getting it to work the next time I wanted to work on it.
 
--   Another big change from the last project is the architecture diagram, the previous diagram was cluttered and could be difficult to follow. I tried my best to address those issues with a better looking diagram utilizing space for the subnets and VPC allowed me to space things out a bit more and in turn made the diagram much easier to follow.
+-   Another big change from the last project is the architecture diagram. The previous diagram was cluttered and could be difficult to follow. I tried my best to address those issues with a better looking diagram, utilizing space for the subnets and VPC allowed me to space things out a bit more and in turn made the diagram much easier to follow.
 
 -   The biggest issue I faced during this project was getting the data from the SQS Queue. I thought that the data for the messages was in the location of event['Messages'][0]['body'] at first, but it is actually in event['Records'][0]['body']. The most confusing thing about this is if you print out the format of the message in your code editor the data will be in event['Messages'][0]['body'], but it is actually in event['Records'][0]['body']. This is also buried within the SQS documentation which was kind of frustrating.
 
--   I feel as if this project was less work because of the utilization of CloudFormation, it just made development so much easier.
+-   I feel as if this project was less work because of the utilization of CloudFormation. It just made development so much easier.
 
 -   I implemented unit tests again, but this time I did not write unit tests to check the connections. That was some more feedback which I had received.
 
--   I still utilized Amazon QuickSight for the Dashboard this time, I did want to go the Tableau route but I have not worked with JDBC drivers before and that is what I needed in order to connect Tableau to S3, so that is something on my to-do list. I did not use Athena because that service is quite frustrating to use and I was not trying to use SQL to query the dataset.
+-   I still utilized Amazon QuickSight for the Dashboard this time. I did want to go the Tableau route but I have not worked with JDBC drivers before and that is what I needed in order to connect Tableau to S3. That is something on my to-do list. I did not use Athena because that service is quite frustrating to use and I was not trying to use SQL to query the dataset.
 
--   Another thing which I changed from the last project was instead of sending all messages to my Slack Channel about data transformations and data pulls, I instead only sent messages to the channel if there were errors.
+-   Another suggestion from my last project was to only send error messages to the slack channel instead of sending all messages about data transformations and data pulls.
 
--   All in all it was another fun project and I learned a lot. I already have the next project planned out, it will consist of all the technologies which have been utilized in this project and my last one.  Plus some more which were suggestions from the last project. 
+-   All in all it was another fun project and I learned a lot. I already have the next project planned out. It will consist of all the technologies which have been utilized in this project and my last one. There will also be some suggestions from the last project which I did not implement in this one. 
