@@ -48,10 +48,11 @@ The project is housed in the AWS ecosystem and utilizes the following resources:
 -   For the visualization layer
 
 ## Dashboard
+![](dashboard_images/Dashboard1.png)
+![](dashboard_images/Dashboard2.png)
+![](dashboard_images/Dashboard3.png)
 ![]()
 ![]()
-![]()
-![]()
-![]()
+
 
 ## Points moving forward
