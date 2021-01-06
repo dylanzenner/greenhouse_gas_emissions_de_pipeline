@@ -53,6 +53,6 @@ The project is housed in the AWS ecosystem and utilizes the following resources:
 ![](dashboard_images/Dashboard5.png)
 ![](dashboard_images/Dashboard2.png)
 ![](dashboard_images/Dashboard3.png)
-
+![](dashboard_images/Dashboard6.png)
 
 ## Points moving forward
