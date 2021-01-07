@@ -19,8 +19,6 @@ def get_table_arn():
 def lambda_handler(event, context):
     """
     Exports the data from DynamoDB to S3
-    :param event:
-    :param context:
     :return: None
     """
     dynamo.export_table_to_point_in_time(
