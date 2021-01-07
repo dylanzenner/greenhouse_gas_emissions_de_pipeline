@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: "This template launches the S3 bucket for storing the lambda function code and manifest file for quicksight"
+Description: "This template creates an S3 bucket for storing the lambda function code and manifest file for quicksight"
 Resources:
   S3Bucket:
     Type: "AWS::S3::Bucket"
