@@ -24,9 +24,10 @@ The project is housed in the AWS ecosystem, packaged into two CloudFormation tem
 -   On-Demand Capacity
 - Partition key on the uuid field
 
-**2 Lambda Functions:**
+**3 Lambda Functions:**
 -   1 for pulling data from the API and sending it in batches to an SQS Queue
 -   1 for transforming the data from the SQS Queue and sending it to DynamoDB
+-   1 for exporting the data to S3
 
 **Secrets Manager:**
 -   For storing connection variables and API tokens
