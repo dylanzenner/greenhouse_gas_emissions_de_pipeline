@@ -9,7 +9,8 @@ dynamo = boto3.client("dynamodb", "us-east-1")
 # Transform the data from sqs and send to dynamodb
 def lambda_handler(event, context):
     """
-    Obtains data from the SQS message, adds a uuid to each record, transforms the data to the proper DynamoDB format and sends the data to the DynamoDB table.
+    Obtains data from the SQS message, adds a uuid to each record, transforms the data 
+    to the proper DynamoDB format and sends the data to the DynamoDB table.
     :param event: SQS Message
     :param context: None
     :return: None
