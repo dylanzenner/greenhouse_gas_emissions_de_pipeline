@@ -22,7 +22,7 @@
   - DynamoDB write access for ExportTableToPointInTime (Customer Policy) 
   - Write access to S3 (Customer Policy)
   
-- Make the necessary changes in the greenhouse_gas_emissions_iac.yml file (i.e.: Put the arn of the IAM Role you created in the previous step here):
+- Make the necessary changes in the greenhouse_gas_emissions_iac.yml file (i.e.: Put the arn of the IAM Roles you created in the previous step here):
   - line 7
   - line 141
   - line 162
