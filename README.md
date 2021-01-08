@@ -42,7 +42,7 @@ The project is housed in the AWS ecosystem, packaged into two CloudFormation tem
 -   Deadletter queue for automatic retry of failed messages
 
 **SNS**
--   For sending failure messages to a Slack Channel
+-   For sending failure messages to an email address
 
 **CloudWatch Time-Based Events:**
 -   For invoking the first lambda function and triggering the pipeline
