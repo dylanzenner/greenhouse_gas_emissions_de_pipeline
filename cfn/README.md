@@ -6,15 +6,21 @@
 
 - Create an IAM Role for the lambda function "pull_data.py" with the following permissions:
   
-  -
+  - AWSLambdaBasicExecutionRole (Managed Policy)
+  - AWSLambdaVPCAccessExecutionRole (Managed Policy)
+  - Write access to SQS (Customer Policy)
   
 - Create an IAM Role for the lambda function "send_to_dynamodb.py" with the following permissions:
   
-  -
+  - AWSLambdaBasicExecutionRole (Managed Policy)
+  - AWSLambdaSQSQueueExecutionRole (Managed Policy)
+  - Write access to DynamoDB (Customer Policy)
   
 - Create an IAM Role for the lambda function "export_to_s3.py" with the following permissions:
   
-  -
+  - AWSLambdaBasicExecutionRole (Managed Policy)
+  - DynamoDB write access for ExportTableToPointInTime (Customer Policy) 
+  - Write access to S3 (Customer Policy)
   
 - Make the necessary changes in the greenhouse_gas_emissions_iac.yml file (i.e.: Put the arn of the IAM Role you created in the previous step here):
   - line 7
