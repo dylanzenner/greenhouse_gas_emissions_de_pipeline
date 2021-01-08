@@ -9,7 +9,7 @@ Tracking greenhouse gas emissions in San Francisco across department, source typ
 **If you would like to replicate this project deploy the CloudFormation templates in the cfn directory.**
 
 ## Architecture
-![](architecture/greenhouse_gas_emissions_architecture_diagram.png)
+![](architecture/updated_architecture.png)
 
 Data is sourced from San Francisco's Open Data API (https://dev.socrata.com/foundry/data.sfgov.org/pxac-sadh) as JSON documents containing information on greenhouse gas emissions throughout San Francisco. A series of Lambda functions integrated with SQS orchestrate the data movement and transformation throughout the pipeline. The presentation layer is created using Amazon QuickSight.
 
