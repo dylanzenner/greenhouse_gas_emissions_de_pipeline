@@ -1,4 +1,30 @@
 ## If you would like to replicate this project please follow these instructions in order
+- Make the necessary changes in the greenhouse_gas_emissions_s3_bucket_iac.yml file (i.e.: BucketName on line 7)
 - Deploy the greenhouse_gas_emissions_s3_bucket_iac.yml file
-- Upload the Lambda function code to the S3 bucket
+- Upload the code for the lambda functions (zipped with their necessary dependencies) to the S3 bucket
+
+
+- Create an IAM Role for the lambda function "pull_data.py" with the following permissions:
+  
+  -
+  
+- Create an IAM Role for the lambda function "send_to_dynamodb.py" with the following permissions:
+  
+  -
+  
+- Create an IAM Role for the lambda function "export_to_s3.py" with the following permissions:
+  
+  -
+  
+- Make the necessary changes in the greenhouse_gas_emissions_iac.yml file (i.e.: Put the arn of the IAM Role you created in the previous step here):
+  - line 7
+  - line 141
+  - line 162
+  - line 183
+  
 - Deploy the greenhouse_gas_emissions_iac.yml file
+
+
+# !!Warning!!
+
+The reason why I did not include the Lambda roles in the CF Template is because there is a known issue when deleting the CF template if it contains IAM Roles/IAM Policies which allow a Lambda function access to the VPC. The lambda functions will be deleted first and then the network interfaces which were allocated to those functions will not be deleted by CF during the deletion process and then you will be unable to detache or delete these interfaces which in turn will result in you not being able to delete the security groups, subnets, or VPC. You will have to contact AWS support to have them fix this issue. 
