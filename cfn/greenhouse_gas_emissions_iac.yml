@@ -178,11 +178,11 @@ Resources:
       Description: 'Exports the data from DynamoDb to an S3 Bucket'
       FunctionName: 'export_to_s3'
       Handler: 'export_to_s3.lambda_handler'
-      MemorySize: 5000
+      MemorySize: 500
       PackageType: 'Zip'
       Role: # Your lambda function role here
       Runtime: 'python3.8'
-      Timeout: 30
+      Timeout: 600
       VpcConfig:
         SecurityGroupIds:
           - !Ref LambdaSecurityGroup
