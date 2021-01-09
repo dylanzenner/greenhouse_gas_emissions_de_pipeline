@@ -36,7 +36,9 @@
   - Go to the AWS Secrets Manager dashboard
   - Store the queue URL which you just copied in the previous step as a new secret and give it the name sqs_queue
   
-- With that, the project should be deployed successfully.
+- After you run the project and have your data in an S3 bucket do not forget to upload the s3_manifest file to the bucket with the correct URL paths to your exported data.
+  
+- With that, the project should be deployed successfully and all that should be left to do is make your dashboard in QuickSight.
 
 
 # !!Warning!!
