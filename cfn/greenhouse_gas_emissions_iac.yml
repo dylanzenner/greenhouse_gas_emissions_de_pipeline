@@ -204,6 +204,7 @@ Resources:
   LambdaSQSTrigger:
     Type: "AWS::Lambda::EventSourceMapping"
     Properties:
+      BatchSize: 1
       EventSourceArn:
         Fn::GetAtt:
           - "SQSQueue"
@@ -214,6 +215,7 @@ Resources:
   DeadLetterSQSTrigger:
     Type: "AWS::Lambda::EventSourceMapping"
     Properties:
+      BatchSize: 1 
       EventSourceArn:
         Fn::GetAtt:
           - "DeadLetterQueue"
