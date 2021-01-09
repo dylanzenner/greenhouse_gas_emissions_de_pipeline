@@ -1,3 +1,4 @@
+![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/dylanzenner/greenhouse_gas_emissions_de_pipeline)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-360/)
 ![GitHub last commit](https://img.shields.io/github/last-commit/dylanzenner/greenhouse_gas_emissions_de_pipeline)
