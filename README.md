@@ -67,6 +67,8 @@ Just like my previous project I had a ton of fun working on this project. I rece
 
 -   Another big change from the last project is the architecture diagram. The previous diagram was cluttered and could be difficult to follow. I tried my best to address those issues with a better looking diagram, utilizing space for the subnets and VPC allowed me to space things out a bit more and in turn made the diagram much easier to follow.
 
+-   I also implemented some event driven architecture with the automatic invocation of the lambda function which processes the data and sends it to DynamoDB. This was another recommendation from my last project so I wanted to implement it to get a feel for it and so I can work on implementing more of it in my next project.
+
 -   The biggest issue I faced during this project was getting the data from the SQS Queue. I thought that the data for the messages was in the location of event['Messages'][0]['body'] at first, but it is actually in event['Records'][0]['body']. The most confusing thing about this is if you print out the format of the message in your code editor the data will be in event['Messages'][0]['body'], but it is actually in event['Records'][0]['body']. This is also buried within the SQS documentation which was kind of frustrating.
 
 -   I feel as if this project was less work because of the utilization of CloudFormation. It just made development so much easier.
