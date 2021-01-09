@@ -74,8 +74,6 @@ Just like my previous project I had a ton of fun working on this project. I rece
 
 -   I still utilized Amazon QuickSight for the Dashboard this time. I did want to go the Tableau route but I have not worked with JDBC drivers before and that is what I needed in order to connect Tableau to S3. That is something on my to-do list. I did not use Athena because that service is quite frustrating to use and I was not trying to use SQL to query the dataset.
 
--   Another suggestion from my last project was to only send error messages to the slack channel instead of sending all messages about data transformations and data pulls.
-
 -   I did want to send error messages to a Slack channel with an SNS integration origionally. But, the Slack email integration which gives you a special email address in order to subscribe to notificatioin services (i.e.: SNS) is only available with the paid version of Slack. Thus, I decided to go with just sending emails to my personal address.
 
 -   All in all it was another fun project and I learned a lot. I already have the next project planned out. It will consist of all the technologies which have been utilized in this project and my last one. There will also be some suggestions from the last project which I did not implement in this one. 
