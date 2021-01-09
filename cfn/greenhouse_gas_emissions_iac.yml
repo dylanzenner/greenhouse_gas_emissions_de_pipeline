@@ -4,7 +4,7 @@ Parameters:
 
 # Alarm email for SNS
   AlarmEmail:
-    Default: "zennerdylan23@gmail.com"
+    Default: # Your email here
     Description: "email address to notify us of operational issues"
     Type: "String"
 
