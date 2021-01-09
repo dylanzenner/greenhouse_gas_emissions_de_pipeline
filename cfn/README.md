@@ -30,6 +30,14 @@
   
 - Deploy the greenhouse_gas_emissions_iac.yml file
 
+- Go to the AWS SQS dashboard
+  - Click on the greenhouse_gas_emissions queue
+  - Copy the queue URL
+  - Go to the AWS Secrets Manager dashboard
+  - Store the queue URL which you just copied in the previous step as a new secret and give it the name sqs_queue
+  
+- With that, the project should be deployed successfully.
+
 
 # !!Warning!!
 
