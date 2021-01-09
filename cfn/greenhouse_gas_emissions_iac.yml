@@ -136,11 +136,11 @@ Resources:
       Description: 'Pulls Data from source API'
       FunctionName: 'pull_data'
       Handler: 'pull_data.lambda_handler'
-      MemorySize: 5000
+      MemorySize: 500
       PackageType: 'Zip'
       Role: # Your lambda function role here
       Runtime: 'python3.8'
-      Timeout: 900
+      Timeout: 300
       VpcConfig:
         SecurityGroupIds:
           - !Ref LambdaSecurityGroup
@@ -157,7 +157,7 @@ Resources:
       Description: 'Transforms data from the sqs queue and sends it to DynamoDB'
       FunctionName: 'send_to_dynamodb'
       Handler: 'send_to_dynamodb.lambda_handler'
-      MemorySize: 5000
+      MemorySize: 500
       PackageType: 'Zip'
       Role: # Your lambda function role here
       Runtime: 'python3.8'
