@@ -36,7 +36,7 @@ The project is housed in the AWS ecosystem, packaged into two CloudFormation tem
 -   For storing connection variables and API tokens
 
 **S3 Bucket with versioning enabled:**
--   For storing the transformed data in JSON format
+-   For storing the exported DynamoDB table data in JSON format
 
 **SQS with a deadletter queue:**
 -   For receiving data in batches from the API
