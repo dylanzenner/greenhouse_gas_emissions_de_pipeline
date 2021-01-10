@@ -80,3 +80,7 @@ Just like my previous project I had a ton of fun working on this project. I rece
 -   I did want to send error messages to a Slack channel with an SNS integration origionally. But, the Slack email integration which gives you a special email address in order to subscribe to notificatioin services (i.e.: SNS) is only available with the paid version of Slack. Thus, I decided to go with just sending emails to my personal address.
 
 -   All in all it was another fun project and I learned a lot. I already have the next project planned out. It will consist of all the technologies which have been utilized in this project and my last one. There will also be some suggestions from the last project which I did not implement in this one. 
+
+## Features that should be added
+
+-   I think the most notable feature which should be added is a way to check the DynamoDB table for any duplicate records before the project is run a second time. I was thinking of writing a script to scan the DynamoDB table and put those scan results in a list and drop the 'id' field. Then check that list before putting any item to DynamoDB. This is something I would love to get some feedback on before I implement it. Either way something needs to be done otherwise when the project is run a second, third, fourth etc. time, there will be duplicate data with the only difference being the 'id' field.
