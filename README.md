@@ -52,12 +52,12 @@ The project is housed in the AWS ecosystem, packaged into two CloudFormation tem
 -   For the visualization layer
 
 ## Dashboard
-![](dashboard_images/Dashboard1.png)
-![](dashboard_images/Dashboard4.png)
-![](dashboard_images/Dashboard5.png)
-![](dashboard_images/Dashboard2.png)
-![](dashboard_images/Dashboard3.png)
-![](dashboard_images/Dashboard6.png)
+![](dashboard_images/dashboard1.png)
+![](dashboard_images/dashboard4.png)
+![](dashboard_images/dashboard5.png)
+![](dashboard_images/dashboard2.png)
+![](dashboard_images/dashboard3.png)
+![](dashboard_images/dashboard6.png)
 
 ## Points moving forward
 
