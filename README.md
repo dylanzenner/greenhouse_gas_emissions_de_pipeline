@@ -73,7 +73,7 @@ Just like my previous project I had a ton of fun working on this project. I rece
 
 -   I feel as if this project was less work because of the utilization of CloudFormation. It just made development so much easier.
 
--   I implemented unit tests again, but this time I did not write unit tests to check the connections. That was some more feedback which I had received.
+-   I implemented unit tests again, but this time I think it was significantly harder to come up with unit tests. I did not want to test for connections or secret variables which wiped out almost all of the pull_data.py. The only other place I could think of writing test functions was against the database so I implemented those.
 
 -   I still utilized Amazon QuickSight for the Dashboard this time. I did want to go the Tableau route but I have not worked with JDBC drivers before and that is what I needed in order to connect Tableau to S3. That is something on my to-do list. I did not use Athena because I was not trying to use SQL to query the dataset.
 
