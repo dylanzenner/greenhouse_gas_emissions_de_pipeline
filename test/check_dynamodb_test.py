@@ -1,3 +1,5 @@
+import pytest
+from pytest import ExitCode
 import boto3
 from boto3.dynamodb.conditions import Key
 
