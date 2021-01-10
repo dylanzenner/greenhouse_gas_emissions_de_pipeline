@@ -5,6 +5,10 @@
                 "s3://greenhouse-gas-emissions/YOUR-AWS-DYNAMODB-EXPORTED-JSON.GZ-FILE-PATH",
                 "s3://greenhouse-gas-emissions/YOUR-AWS-DYNAMODB-EXPORTED-JSON.GZ-FILE-PATH",
                 "s3://greenhouse-gas-emissions/YOUR-AWS-DYNAMODB-EXPORTED-JSON.GZ-FILE-PATH",
+                "s3://greenhouse-gas-emissions/YOUR-AWS-DYNAMODB-EXPORTED-JSON.GZ-FILE-PATH",
+                "s3://greenhouse-gas-emissions/YOUR-AWS-DYNAMODB-EXPORTED-JSON.GZ-FILE-PATH",
+                "s3://greenhouse-gas-emissions/YOUR-AWS-DYNAMODB-EXPORTED-JSON.GZ-FILE-PATH",
+                "s3://greenhouse-gas-emissions/YOUR-AWS-DYNAMODB-EXPORTED-JSON.GZ-FILE-PATH",
                 "s3://greenhouse-gas-emissions/YOUR-AWS-DYNAMODB-EXPORTED-JSON.GZ-FILE-PATH"
             ]
         }
