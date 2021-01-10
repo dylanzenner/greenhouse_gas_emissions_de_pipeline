@@ -33,5 +33,9 @@ def check_record_format():
 
     data = table.scan(**scan_kwargs)["Items"][0]
 
+    lst = []
+
     for i in data.keys():
-        assert i in keys
+        lst.append(i)
+
+    assert keys == lst
