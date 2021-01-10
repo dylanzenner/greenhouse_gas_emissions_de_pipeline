@@ -75,7 +75,7 @@ Just like my previous project I had a ton of fun working on this project. I rece
 
 -   I implemented unit tests again, but this time I did not write unit tests to check the connections. That was some more feedback which I had received.
 
--   I still utilized Amazon QuickSight for the Dashboard this time. I did want to go the Tableau route but I have not worked with JDBC drivers before and that is what I needed in order to connect Tableau to S3. That is something on my to-do list. I did not use Athena because that service is quite frustrating to use and I was not trying to use SQL to query the dataset.
+-   I still utilized Amazon QuickSight for the Dashboard this time. I did want to go the Tableau route but I have not worked with JDBC drivers before and that is what I needed in order to connect Tableau to S3. That is something on my to-do list. I did not use Athena because I was not trying to use SQL to query the dataset.
 
 -   I did want to send error messages to a Slack channel with an SNS integration origionally. But, the Slack email integration which gives you a special email address in order to subscribe to notificatioin services (i.e.: SNS) is only available with the paid version of Slack. Thus, I decided to go with just sending emails to my personal address.
 
