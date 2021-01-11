@@ -16,7 +16,7 @@ def lambda_handler(event, context):
     :return: None
     """
     for item in json.loads(event["Records"][0]["body"]):
-        item["id"] = uuid.uuid4().bytes
+        item["id"] = uuid.uuid1().bytes
         for key, value in item.items():
             if key == "id":
                 item[key] = {"B": bytes(value)}
